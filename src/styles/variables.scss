@@ -1,0 +1,4 @@
+$headerHeight: 72px;
+$contentHeight: calc(100vh - #{$headerHeight});
+
+$footerHeight: $headerHeight*2;

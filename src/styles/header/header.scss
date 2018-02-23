@@ -1,0 +1,54 @@
+@import '../variables.scss';
+
+.header {
+  background-color: antiquewhite;
+  width: 100vw;
+  height: $headerHeight;
+  border-bottom: solid gold 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.linkToHome {
+  text-decoration: none;
+  color: coral;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: $headerHeight;
+  &:hover {
+    text-decoration: none;
+    color: coral;
+  }
+}
+
+.title {
+  font-size: 32px;
+  margin: 0;
+
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  margin-left: 24px;
+}
+
+.buttonsDiv {
+  position: absolute;
+  right: 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+.translationBtn {
+  border: solid chocolate 1px;
+  background-color: floralwhite;
+  margin: 2px;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+  }
+}

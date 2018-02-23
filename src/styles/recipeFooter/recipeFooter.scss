@@ -1,0 +1,15 @@
+@import '../variables.scss';
+
+.imgSize {
+  height: $headerHeight;
+  width: $headerHeight;
+}
+
+figure {
+  margin: 5px;
+  text-align: center;
+}
+
+.recipeFooter {
+  width: 33%;
+}

@@ -1,0 +1,24 @@
+.carroussel {
+  height: 50%;
+  margin-bottom: 6%;
+  position: relative;
+  overflow: hidden;
+}
+
+.enter {
+  left: 100%;
+  transition: linear 1s;
+}
+
+.enterActive {
+  left: 0;
+}
+
+.exit {
+  left: 0;
+  transition: linear 1s;
+}
+
+.exitActive {
+  left: -100%;
+}
