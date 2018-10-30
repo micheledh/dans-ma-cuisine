@@ -1,15 +1,26 @@
 .menu {
-  border-right: solid golden 1px;
+  border-right: 1px solid gold;
   width: 30vw;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
 }
 
+.closeMenu {
+  width: 25px;
+  height: 25px;
+  align-self: flex-end;
+}
 
 .menuTitles {
   color: chocolate;
+  margin: 0;
 }
 
-
-.rankingLink {
-  color: chocolate;
-  hover color: saddlebrown;
+.slideMenu {
+  border-right: 1px solid gold;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
 }

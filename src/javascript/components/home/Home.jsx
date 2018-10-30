@@ -3,13 +3,14 @@ import styles from 'styles/home/home.scss';
 import React, {Component} from 'react';
 import Footer from '../footer/Footer';
 import Carroussel from '../carroussel/Carroussel';
+import Menu from '../menu/Menu';
 
 export default class Home extends Component {
     render() {
         return (
             <div className={styles.homeContainer}>
                 {/* menu */}
-                <div className={styles.menu} />
+                <Menu className={styles.menu} />
                 <div className={styles.contentContainer}>
                     {/* content */}
                     <div className={styles.content}>

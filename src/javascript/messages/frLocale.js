@@ -42,7 +42,7 @@ const frLocale = {
         flour: 'farine',
         garlic: 'ail',
         glasses: 'verrines',
-        goatcheese: 'fromage de chèvre',
+        goatCheese: 'fromage de chèvre',
         gratedGruyere: 'gruyère râpé',
         gratedParmesanCheese: 'Parmesan râpé',
         gratedSurimi: 'Surimi râpé goût crabe',

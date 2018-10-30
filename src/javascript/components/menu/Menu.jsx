@@ -1,5 +1,10 @@
 import React, {Component} from 'react';
+
 import styles from 'styles/menu/menu.scss';
+
+import Category from '../category/Category';
+import KeywordSearch from '../keywordSearch/KeywordSearch';
+import IngredientSearch from '../ingredientSearch/IngredientSearch';
 
 const smallView = 500;
 
@@ -8,6 +13,27 @@ export default class Menu extends Component {
         isOpen: true,
         windowWidth: 0,
     };
+
+    componentDidMount() {
+        window.addEventListener('resize', this.onResize);
+    }
+
+    componentWillReceiveProps(nextProps, nextState) {
+        if (nextState.windowWidth <= smallView && this.state.windowWidth > smallView) {
+            this.setState({
+                isOpen: false,
+            });
+        }
+        if (nextState.windowWidth > smallView && this.state.windowWidth <= smallView) {
+            this.setState({
+                isOpen: true,
+            });
+        }
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.onResize);
+    }
 
     onResize = () => {
         this.setState({
@@ -27,27 +53,6 @@ export default class Menu extends Component {
         });
     };
 
-    componentDidMount() {
-        window.addEventListener('resize', this.onResize);
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('resize', this.onResize);
-    }
-
-    componentWillUpdate(nextProps, nextState) {
-        if (nextState.windowWidth <= smallView && this.state.windowWidth > smallView) {
-            this.setState({
-                isOpen: false,
-            });
-        }
-        if (nextState.windowWidth > smallView && this.state.windowWidth <= smallView) {
-            this.setState({
-                isOpen: true,
-            });
-        }
-    }
-
     render() {
         if (this.state.isOpen) {
             const isSmallView = this.state.windowWidth <= smallView;
@@ -55,8 +60,8 @@ export default class Menu extends Component {
             return (
                 <nav className={`${menuStyle}`}>
                     {isSmallView ?
-                        <button onClick={this.closeMenu}>
-                            close
+                        <button onClick={this.closeMenu} className={styles.closeMenu}>
+                            X
                         </button> : null}
                     <h3 className={styles.menuTitles}>Categories</h3>
                     <Category />
@@ -64,7 +69,6 @@ export default class Menu extends Component {
                     <KeywordSearch />
                     <h3 className={styles.menuTitles}>Ingredient Research</h3>
                     <IngredientSearch />
-                    <h3 className={styles.rankingLink}>Ranking</h3>
                 </nav>
             );
         }
