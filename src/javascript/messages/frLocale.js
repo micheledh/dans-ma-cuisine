@@ -2,6 +2,11 @@ const frLocale = {
     locale: 'fr',
     messages: {
         goBack: 'Retour',
+        category: 'Catégorie',
+        categories: 'Catégories',
+        ingredientResearch: 'Recherche par ingrédient',
+        keywordResearch: 'Recherche par mot-clé',
+        search: 'Rechercher',
         // serve
         servePeople: '(pour {numberPeople} personnes)',
         // titles
@@ -20,6 +25,20 @@ const frLocale = {
         pepperSauce: 'Sauce au poivre',
         shepherdsPie: 'Hachis parmentier',
         time: 'Temps',
+        // keywords
+        starter: 'Entrée',
+        starters: 'Entrées',
+        main: 'Plat principal',
+        mains: 'Plats principaux',
+        dessert: 'Dessert',
+        desserts: 'Desserts',
+        other: 'Autre',
+        others: 'Autres',
+        drink: 'Boisson',
+        light: 'Léger',
+        quick: 'Rapide',
+        sauce: 'Sauce',
+        vegetarian: 'Végétarien',
         // Ingredients
         apples: 'pommes',
         avocado: 'avocat',

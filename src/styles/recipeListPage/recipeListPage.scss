@@ -1,0 +1,21 @@
+.listTitle {
+  text-align: center;
+}
+
+.recipeLink {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.backBtn {
+  border: solid chocolate 1px;
+  background-color: floralwhite;
+  margin: 2px;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+  }
+}

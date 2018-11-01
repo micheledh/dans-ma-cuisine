@@ -1,0 +1,13 @@
+.categoryLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.categoryLink {
+  text-decoration: none;
+  color: black;
+  margin: 2px;
+  &:hover {
+    text-decoration: underline;
+  }
+}

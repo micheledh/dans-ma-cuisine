@@ -2,6 +2,11 @@ const enLocale = {
     locale: 'en',
     messages: {
         goBack: 'Back',
+        category: 'Category',
+        categories: 'Categories',
+        ingredientResearch: 'Ingredient Research',
+        keywordResearch: 'Keyword Research',
+        search: 'Search',
         // serve
         servePeople: '(serve {numberPeople} people)',
         // titles
@@ -20,6 +25,20 @@ const enLocale = {
         pepperSauce: 'Pepper Sauce',
         shepherdsPie: 'Shepherds Pie',
         time: 'Time',
+        // keywords
+        starter: 'Starter',
+        starters: 'Starters',
+        main: 'Main',
+        mains: 'Mains',
+        dessert: 'Dessert',
+        desserts: 'Desserts',
+        other: 'Other',
+        others: 'Others',
+        drink: 'Drink',
+        light: 'Light',
+        quick: 'Quick',
+        sauce: 'Sauce',
+        vegetarian: 'Vegetarian',
         // ingredients
         apples: 'apples',
         avocado: 'avocado',
@@ -31,7 +50,7 @@ const enLocale = {
         calvados: 'Calvados',
         carrot: 'carrot',
         chickenBreast: 'chicken breast',
-        chives: 'chives',
+        chive: 'chives',
         chocolateChips: 'chocolate chips',
         coarseSalt: 'coarse salt',
         cream: 'cream',

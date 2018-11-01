@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {FormattedMessage} from 'react-intl';
 
 import styles from 'styles/menu/menu.scss';
 
@@ -10,7 +11,7 @@ const smallView = 500;
 
 export default class Menu extends Component {
     state = {
-        isOpen: true,
+        isOpen: false,
         windowWidth: 0,
     };
 
@@ -63,17 +64,17 @@ export default class Menu extends Component {
                         <button onClick={this.closeMenu} className={styles.closeMenu}>
                             X
                         </button> : null}
-                    <h3 className={styles.menuTitles}>Categories</h3>
+                    <h3 className={styles.menuTitles}><FormattedMessage id="categories" /></h3>
                     <Category />
-                    <h3 className={styles.menuTitles}>Keyword Research</h3>
+                    <h3 className={styles.menuTitles}><FormattedMessage id="keywordResearch" /></h3>
                     <KeywordSearch />
-                    <h3 className={styles.menuTitles}>Ingredient Research</h3>
+                    <h3 className={styles.menuTitles}><FormattedMessage id="ingredientResearch" /></h3>
                     <IngredientSearch />
                 </nav>
             );
         }
         return (
-            <button onClick={this.openMenu}>click me</button>
+            <button onClick={this.openMenu} className={styles.openMenu}>M</button>
         );
     }
 }
